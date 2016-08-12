@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTunes.Scrubber", "iTunes.Scrubber\iTunes.Scrubber.csproj", "{E8E58260-E90E-4BA6-844E-3F2B84791098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTunes.Scrubber.GUI", "iTunes.Scrubber.GUI\iTunes.Scrubber.GUI.csproj", "{88DC33A0-449C-4872-944C-36CB5FF21340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libmp4v2-cs", "libmp4v2-cs\libmp4v2-cs.csproj", "{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A8F3F0F9-BD3F-45C2-9ECB-B897987BDF98}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.ddrit.com/tfs/home
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = iTunes.Scrubber.GUI\\iTunes.Scrubber.GUI.csproj
+		SccProjectName1 = iTunes.Scrubber.GUI
+		SccLocalPath1 = iTunes.Scrubber.GUI
+		SccProjectUniqueName2 = iTunes.Scrubber\\iTunes.Scrubber.csproj
+		SccProjectName2 = iTunes.Scrubber
+		SccLocalPath2 = iTunes.Scrubber
+		SccProjectUniqueName3 = libmp4v2-cs\\libmp4v2-cs.csproj
+		SccProjectName3 = libmp4v2-cs
+		SccLocalPath3 = libmp4v2-cs
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E58260-E90E-4BA6-844E-3F2B84791098}.Debug|x86.ActiveCfg = Debug|x86
+		{E8E58260-E90E-4BA6-844E-3F2B84791098}.Debug|x86.Build.0 = Debug|x86
+		{E8E58260-E90E-4BA6-844E-3F2B84791098}.Release|x86.ActiveCfg = Release|x86
+		{E8E58260-E90E-4BA6-844E-3F2B84791098}.Release|x86.Build.0 = Release|x86
+		{88DC33A0-449C-4872-944C-36CB5FF21340}.Debug|x86.ActiveCfg = Debug|x86
+		{88DC33A0-449C-4872-944C-36CB5FF21340}.Debug|x86.Build.0 = Debug|x86
+		{88DC33A0-449C-4872-944C-36CB5FF21340}.Release|x86.ActiveCfg = Release|x86
+		{88DC33A0-449C-4872-944C-36CB5FF21340}.Release|x86.Build.0 = Release|x86
+		{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}.Debug|x86.ActiveCfg = Debug|x86
+		{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}.Debug|x86.Build.0 = Debug|x86
+		{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}.Release|x86.ActiveCfg = Release|x86
+		{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

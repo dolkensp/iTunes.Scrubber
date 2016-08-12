@@ -1,0 +1,7 @@
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\bin\Debug\libmp4v2.dll
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\bin\Debug\libmp4v2-cs.dll
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\bin\Debug\libmp4v2-cs.pdb
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\obj\x86\Debug\libmp4v2-cs.dll
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\obj\x86\Debug\libmp4v2-cs.pdb
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\obj\x86\Debug\libmp4v2-cs.csprojResolveAssemblyReference.cache
+D:\Workspaces\tfs.ddrit.com\iTunes.Scrubber\libmp4v2-cs\bin\Debug\PInvoker.Marshal.dll

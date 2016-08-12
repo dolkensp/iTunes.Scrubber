@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8E58260-E90E-4BA6-844E-3F2B84791098}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iTunes.Scrubber</RootNamespace>
+    <AssemblyName>iTunes.Scrubber</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fizzler">
+      <HintPath>..\Library\Fizzler.dll</HintPath>
+    </Reference>
+    <Reference Include="Fizzler.Systems.HtmlAgilityPack">
+      <HintPath>..\Library\Fizzler.Systems.HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.4\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoker.Marshal, Version=1.2.15.0, Culture=neutral, PublicKeyToken=006a457079cb88f5, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libmp4v2-cs\lib\PInvoker.Marshal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OldCode\Movie.cs" />
+    <Compile Include="BaseClasses\ParserBase.cs" />
+    <Compile Include="BaseClasses\ScrubberBase.cs" />
+    <None Include="ref.libmp4v2.cs" />
+    <Compile Include="DataSources\itunesSearchSource.cs" />
+    <Compile Include="DataSources\imdbTVSource.cs" />
+    <Compile Include="DataSources\imdbAPISource.cs" />
+    <Compile Include="DataSources\imdbMovieSource.cs" />
+    <Compile Include="Filters\Filters.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="BaseClasses\MediaBase.cs" />
+    <Compile Include="Helpers\RatingHelper.cs" />
+    <Compile Include="Interfaces\IDataSource.cs" />
+    <None Include="libmp4v2.cs" />
+    <Compile Include="MediaItems\MovieItem.cs" />
+    <Compile Include="MediaItems\MusicItem.cs" />
+    <Compile Include="MediaItems\MusicVideoItem.cs" />
+    <Compile Include="BaseClasses\InternalSingletonBase.cs" />
+    <Compile Include="MediaItems\TVShowItem.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Factories\ScrubberFactory.cs" />
+    <Compile Include="Interfaces\IScrubber.cs" />
+    <Compile Include="Scrubbers\MusicScrubber.cs" />
+    <Compile Include="Scrubbers\MovieScrubber.cs" />
+    <Compile Include="Scrubbers\MusicVideoScrubber.cs" />
+    <Compile Include="Scrubbers\TVShowScrubber.cs" />
+    <Compile Include="Sorters\MovieSorter.cs" />
+    <Compile Include="Sorters\MusicSorter.cs" />
+    <Compile Include="Sorters\MusicVideoSorter.cs" />
+    <Compile Include="Sorters\Sorters.cs" />
+    <Compile Include="Sorters\TVShowSorter.cs" />
+    <Compile Include="DataSources\imdbSource.cs" />
+    <Compile Include="DataSources\iTunesSource.cs" />
+    <Compile Include="DataSources\rapidshareSource.cs" />
+    <Compile Include="DataSources\tvdbSource.cs" />
+    <Compile Include="DataSources\warez-bbSource.cs" />
+    <Compile Include="DataSources\wikipediaSource.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Filters\MovieFilter.cs" />
+    <Compile Include="Filters\MusicFilter.cs" />
+    <Compile Include="Filters\MusicVideoFilter.cs" />
+    <Compile Include="Filters\TVShowFilter.cs" />
+    <Compile Include="Interfaces\IMediaItem.cs" />
+    <Compile Include="Interfaces\IParser.cs" />
+    <None Include="new.libmp4v2.cs" />
+    <None Include="OldCode\MetaData.cs" />
+    <None Include="OldCode\MetaScrub.cs" />
+    <None Include="OldCode\SimpleWebResponse.cs" />
+    <None Include="OldCode\Program.cs" />
+    <Compile Include="Parsers\MovieParser.cs" />
+    <Compile Include="Parsers\MusicParser.cs" />
+    <Compile Include="Parsers\MusicVideoParser.cs" />
+    <Compile Include="Parsers\TVShowParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="OldCode\TVShow.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="iTunesLib">
+      <Guid>{9E93C96F-CF0D-43F6-8BA8-B807A3370712}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>13</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libmp4v2-cs\libmp4v2-cs.csproj">
+      <Project>{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}</Project>
+      <Name>libmp4v2-cs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

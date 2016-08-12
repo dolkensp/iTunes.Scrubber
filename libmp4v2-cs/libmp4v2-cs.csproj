@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A420A2F-523C-4EF1-BFF1-461E5C0CF03F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>libmp4v2-cs</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="PInvoker.Marshal">
+      <HintPath>lib\PInvoker.Marshal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="libmp4v2\NativeFunctions.cs" />
+    <Compile Include="libmp4v2\Internal\mp4v2_ismacryp_session_params.cs" />
+    <Compile Include="libmp4v2\mp4v2_ismacryp_session_params.cs" />
+    <Compile Include="libmp4v2\mp4v2_ismacrypParams.cs" />
+    <Compile Include="libmp4v2\MP4ChapterType.cs" />
+    <Compile Include="libmp4v2\Internal\MP4Chapter_s.cs" />
+    <Compile Include="libmp4v2\MP4Chapter_s.cs" />
+    <Compile Include="libmp4v2\MP4Chapter_t.cs" />
+    <Compile Include="libmp4v2\Internal\MP4ItmfItem_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfItem_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfItem.cs" />
+    <Compile Include="libmp4v2\Internal\MP4ItmfItemList_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfItemList_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfItemList.cs" />
+    <Compile Include="libmp4v2\MP4LogLevel.cs" />
+    <Compile Include="libmp4v2\Internal\MP4FileProvider_s.cs" />
+    <Compile Include="libmp4v2\va_list.cs" />
+    <Compile Include="libmp4v2\Internal\MP4Tags_s.cs" />
+    <Compile Include="libmp4v2\MP4Tags_s.cs" />
+    <Compile Include="libmp4v2\MP4Tags.cs" />
+    <Compile Include="libmp4v2\Internal\MP4TagArtwork_s.cs" />
+    <Compile Include="libmp4v2\MP4TagArtwork_s.cs" />
+    <Compile Include="libmp4v2\MP4TagArtwork.cs" />
+    <Compile Include="libmp4v2\Internal\MP4TagDisk_s.cs" />
+    <Compile Include="libmp4v2\MP4TagDisk_s.cs" />
+    <Compile Include="libmp4v2\MP4TagDisk.cs" />
+    <Compile Include="libmp4v2\Internal\MP4TagTrack_s.cs" />
+    <Compile Include="libmp4v2\MP4TagTrack_s.cs" />
+    <Compile Include="libmp4v2\MP4TagTrack.cs" />
+    <Compile Include="libmp4v2\MP4ItmfBasicType_e.cs" />
+    <Compile Include="libmp4v2\MP4ItmfBasicType.cs" />
+    <Compile Include="libmp4v2\Internal\MP4ItmfData_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfData_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfData.cs" />
+    <Compile Include="libmp4v2\Internal\MP4ItmfDataList_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfDataList_s.cs" />
+    <Compile Include="libmp4v2\MP4ItmfDataList.cs" />
+    <Compile Include="libmp4v2\MP4FileMode_e.cs" />
+    <Compile Include="libmp4v2\MP4FileMode.cs" />
+    <Compile Include="libmp4v2\MP4TagArtworkType_e.cs" />
+    <Compile Include="libmp4v2\MP4TagArtworkType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libmp4v2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
